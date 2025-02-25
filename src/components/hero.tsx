@@ -18,8 +18,8 @@ const Hero = () => {
         />
     </div>
     return (
-        <Element name="features" className="bg-[#4131f9] pt-28 text-white background-effect">
-            <div className="flex flex-col w-[70%] mx-auto justify-center items-center h-[85vh] text-center">
+        <Element name="features" className="bg-[#4131f9]  text-white background-effect">
+            <div className="flex flex-col w-[70%] mx-auto justify-center items-center h-screen text-center">
                 <div className="text-[60px] 2xl:text-[72px] xl:leading-[80px] font-medium">Product URL to Video AI Video Ads Generator</div>
                 <div className="text-[20px] 2xl:text-[24px] mt-2 text-grey95">Convert URL to Video Ads Online for Free! <br />
                     Turn your product URL into Engaging videos ads in minutes with VidAU AI URL to Video ad maker.Effortlessly create Amazon, Shopify and Etsy products URL to video.
