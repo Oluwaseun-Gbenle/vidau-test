@@ -20,3 +20,10 @@ body {
   background: var(--background);
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
+.background-effect {
+  background-image: url("/images/hero-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:left;
+}

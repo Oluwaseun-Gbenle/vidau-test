@@ -86,7 +86,7 @@ const NavBar: FC = () => {
               className={`relative font-semibold cursor-pointer lg:mt-0 text-sm ${activeLink === link.href
                 ? "bg-white rounded-[4px] text-azure50"
                 : "text-white"
-                } hover:bg-white hover:rounded-[4px] hover:text-azure50 mx-2 px-4 py-3 group`}
+                } hover:bg-white hover:rounded-[4px] hover:text-azure50 mx-1 px-4 py-3 group`}
             >
               <div className="flex items-center gap-1">
                 {link.label}
