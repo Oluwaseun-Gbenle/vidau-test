@@ -11,7 +11,7 @@ const TryItNow = () => {
     };
 
     return (
-        <div className=' px-5 sm:px-12 xl:px-16 relative'>
+        <div className=' px-5 sm:px-12 xl:px-16 py-20 relative'>
             <div className="flex gap-8 justify-center absolute -top-20 left-0 right-0">
                 {shopingLinkList?.map((item, index) =>
                     <div key={index}
