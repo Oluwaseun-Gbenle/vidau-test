@@ -12,6 +12,7 @@ const NavBar: FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const [activeLink, setActiveLink] = useState("features");
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
 
   const links = [
@@ -45,9 +46,22 @@ const NavBar: FC = () => {
     if (pathname !== "/") return setActiveLink("");
   }, [router]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true); 
+      } else {
+        setScrolled(false); 
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
-      className={`py-6 mx-5 sm:mx-12 xl:mx-16 fixed top-0 left-0 right-0 z-50 bg-transparent flex lg:items-center lg:justify-between px-6 sm:px-16 lg:px-0 flex-row-reverse lg:flex-row  transition-all duration-300`}
+      className={` ${scrolled ? "bg-indigo01" : "bg-transparent"} pt-5 pb-3 px-5 sm:px-12 xl:px-16 fixed top-0 left-0 right-0 z-50 flex lg:items-center lg:justify-between lg:px-0 flex-row-reverse lg:flex-row  transition-all duration-300`}
     >
       <div className="">
         <Image

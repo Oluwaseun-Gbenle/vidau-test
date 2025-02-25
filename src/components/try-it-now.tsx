@@ -11,7 +11,7 @@ const TryItNow = () => {
     };
 
     return (
-        <div className='bg-white px-5 sm:px-12 xl:px-16 relative'>
+        <div className=' px-5 sm:px-12 xl:px-16 relative'>
             <div className="flex gap-8 justify-center absolute -top-20 left-0 right-0">
                 {shopingLinkList?.map((item, index) =>
                     <div key={index}
@@ -43,7 +43,7 @@ const TryItNow = () => {
                     </div>
                 )}
             </div>
-            <div className="py-28">
+            <div className="py-16">
                 {tryitList?.map((item, index) =>
                     <div key={index} className={`rounded-[40px] h-[450px] sm:flex ${index=== 1 ? "md:flex-row-reverse": "md:flex-row"} items-center justify-center mt-8 px-10`}
                         style={{ background: "linear-gradient(90deg, rgba(57, 79, 247, 0.08) 0%, rgba(113, 66, 247, 0.08) 100%)" }}>

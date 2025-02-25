@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ededed;
     --foreground: #ededed;
   }
 }
@@ -28,6 +28,12 @@ body {
   background-position: left;
 }
 
+.gradient-bg {
+  background-image: url("/images/Gradient-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
 
 .background-effect {
   position: relative;
