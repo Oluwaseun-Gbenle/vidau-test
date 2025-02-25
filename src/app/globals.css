@@ -21,9 +21,32 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.background-effect {
+.background-color {
   background-image: url("/images/hero-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:left;
+  background-position: left;
+}
+
+
+.background-effect {
+  position: relative;
+}
+
+.background-effect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/background-effect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  mix-blend-mode: color-burn;
+  opacity: 1;
+  z-index: 0;
+}
+
+.background-effect > * {
+  position: relative;
+  z-index: 1;
 }
