@@ -20,6 +20,7 @@ export default {
         mangenta1260: "rgb(48, 0, 60, 0.6)",
         grey27:"#444444",
         blue66:"#7859F6",
+        warning500:"#F59E0B",
       },
     },
   },

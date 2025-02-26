@@ -56,3 +56,8 @@ body {
   position: relative;
   z-index: 1;
 }
+/* customise margin on carousel */
+.custom-slider .slick-slide{
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  }
