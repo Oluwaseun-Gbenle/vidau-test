@@ -262,3 +262,26 @@ export const supportList = ["/images/amazon.png", "/images/shopify.png", "/image
             { question: "Do I need any skills to use VidAU AI Product URL to Video?", answer: "" },
             { question: "Can I use videos created by the URL to video generator for commercial purposes?", answer: "" },
           ];
+
+         export const articles = [
+            {
+                image: "/images/Link.png",
+                title: "Watch Anime Now - Do You Love Solo Leveling Season 2?",
+                date: "2025-01-01",
+            },
+            {
+                image: "/images/Link (1).png",
+                title: "AI Prompts for Better Workflow Management",
+                date: "2024-12-31",
+            },
+            {
+                image: "/images/Link (2).png",
+                title: "Story AI Generator: Boost Your Brand with Powerful...",
+                date: "2024-12-31",
+            },
+            {
+                image: "/images/Link 3.png",
+                title: "How to Get Rid of Ads on Websites Click Right Now",
+                date: "2024-12-29",
+            }
+        ]

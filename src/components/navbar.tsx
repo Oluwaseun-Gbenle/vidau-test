@@ -61,7 +61,7 @@ const NavBar: FC = () => {
 
   return (
     <div
-      className={` ${scrolled ? "bg-indigo01" : "bg-transparent"} pt-3 pb-3 px-5 sm:px-12 xl:px-16 fixed top-0 left-0 right-0 z-50 flex lg:items-center lg:justify-between lg:px-0 flex-row-reverse lg:flex-row  transition-all duration-300`}
+      className={` ${scrolled ? "bg-[rgb(95,52,234,0.95)]" : "bg-transparent"} pt-3 pb-3 px-5 sm:px-12 xl:px-16 fixed top-0 left-0 right-0 z-50 flex lg:items-center lg:justify-between lg:px-0 flex-row-reverse lg:flex-row  transition-all duration-300`}
     >
       <div className="">
         <Image
@@ -104,7 +104,9 @@ const NavBar: FC = () => {
             >
               <div className="flex items-center gap-1">
                 {link.label}
-                <IoMdArrowDropdown size={17} color={activeLink === link.href ? "text-azure50" : "text-white"} />
+                <IoMdArrowDropdown size={17} 
+                color={activeLink === link.href ? "text-azure50" : "text-white"}
+                className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}  />
               </div>
             </Link>
           )

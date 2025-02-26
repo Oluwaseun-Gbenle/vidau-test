@@ -13,6 +13,8 @@ import AuthenticReviews from "@/components/authentic-reviews";
 import TrustedBy from "@/components/trusted-by";
 import FAQ from "@/components/FAQ";
 import OtherFeatures from "@/components/other-features";
+import LearnMore from "@/components/learn-more";
+import Footer from "@/components/footer";
 
 export default function Page() {
   return (
@@ -29,6 +31,8 @@ export default function Page() {
       <TrustedBy/>
       <FAQ />
       <OtherFeatures/>
+      <LearnMore/>
+      <Footer/>
     </Fragment>
   );
 }

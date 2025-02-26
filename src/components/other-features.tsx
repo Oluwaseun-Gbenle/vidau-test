@@ -5,26 +5,18 @@ import Image from 'next/image'
 import Slider from "react-slick"
 
 const OtherFeatures = () => {
-    const trasformProductList = [
-        {
-            image: "/images/ai-explanation.png",
-        },
-        {
-            image: "/images/ai-woman.png",
-        },
-        {
-            image: "/images/ai-holding-package.png",
-        },
-        {
-            image: "/images/ai-brandname.png",
-
-        },
-        {
-            image: "/images/ai-man.png",
-
-        },
-
-    ];
+    const tools1 = [
+        { title: "Video Downloader", image: "/video-downloader.png" },
+        { title: "YouTube to MP3", image: "/youtube-mp3.png" },
+        { title: "Facebook Video Downloader", image: "/facebook-downloader.png" },
+        { title: "AI Video Generator", image: "/ai-generator.png" },
+    ]
+    const tools2 = [
+        { title: "Watermark Remover", image: "/watermark-remover.png" },
+        { title: "Subtitles Remover", image: "/subtitles-remover.png" },
+        { title: "Subtitles Translator", image: "/subtitles-translator.png" },
+        { title: "Instagram Video Downloader", image: "/instagram-downloader.png" },
+      ];
     const settings = {
         dots: false,
         infinite: true,
@@ -46,31 +38,32 @@ const OtherFeatures = () => {
             <div className='bg-[#6437F5] rounded-[32px] py-28'>
                 <Heading text={"Check Out Other AI Features"} className='text-white ' />
                 <div className='text-white font-medium text-lg mt-6 text-center sm:w-[80%] mx-auto'>Explore a range of innovative AI tools designed to drive efficiency, spark creativity, and achieve optimal results for your marketing or advertising campaigns.</div>
-                <div className='flex flex-wrap gap-6 mt-16 custom-slider'>
+                <div className='flex flex-wrap mt-16 custom-slider'>
                     <Slider {...settings} >
-                        {trasformProductList?.map((item, index) => (
-                            <div key={index} className="px-2">
+                        {tools1?.map((item, index) => (
+                            <div key={index} className="px-2 rounded-[16px] bg-black p-4 overflow-hidden ">
                                 <Image
                                     src={item.image}
                                     alt="item-icon"
-                                    height={600}
-                                    width={400}
-                                    className="h-[600px] w-full rounded-[24px] object-cover"
+                                    height={502}
+                                    width={304}
                                 />
+                                <div className="text-center mt-2 font-semibold text-white text-xl">{item.title}</div>
                             </div>
                         ))}
                     </Slider>
 
                     <Slider {...settings} >
-                        {trasformProductList?.map((item, index) => (
-                            <div key={index} className="px-2">
+                        {tools2?.map((item, index) => (
+                            <div key={index} className="px-2 rounded-[16px] bg-black p-4 overflow-hidden ">
                                 <Image
                                     src={item.image}
                                     alt="item-icon"
-                                    height={600}
-                                    width={400}
-                                    className="h-[600px] w-full rounded-[24px] object-cover"
+                                    height={502}
+                                    width={304}
+                                    className="h-[502px] w-full rounded-[24px] object-cover"
                                 />
+                                  <div className="text-center mt-2 font-semibold text-white text-xl">{item.title}</div>
                             </div>
                         ))}
                     </Slider>

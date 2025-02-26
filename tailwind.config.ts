@@ -21,6 +21,7 @@ export default {
         grey27:"#444444",
         blue66:"#7859F6",
         warning500:"#F59E0B",
+        gray27:"#444444",
       },
     },
   },
