@@ -21,14 +21,30 @@ const OtherFeatures = () => {
         touchThreshold: 10,
         className: "overflow-hidden",
         containerClassName: "w-full max-w-full overflow-hidden",
+        responsive: [
+            {
+                breakpoint: 1042,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 0.3,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 0.2,
+                }
+            }
+        ],
     };
     const rtlSettings = { ...settings, rtl: true };
 
     return (
-        <div className='px-5 sm:px-12 xl:px-16'>
-            <div className='bg-[#6437F5] rounded-[32px] py-28'>
-                <Heading text={"Check Out Other AI Features"} className='text-white ' />
-                <div className='text-white font-medium text-lg mt-6 text-center sm:w-[80%] mx-auto'>Explore a range of innovative AI tools designed to drive efficiency, spark creativity, and achieve optimal results for your marketing or advertising campaigns.</div>
+        <div className=''>
+            <div className='bg-[#6437F5] py-16'>
+                <Heading text={"Check Out Other AI Features"} className='text-white px-6' />
+                <div className='text-white font-medium sm:text-lg mt-2 sm:mt-0 text-center w-[70%] sm:w-[80%] mx-auto'>Explore a range of innovative AI tools designed to drive efficiency, spark creativity, and achieve optimal results for your marketing or advertising campaigns.</div>
                 <div className='flex flex-wrap mt-16 custom-slider'>
                     <Slider {...settings} >
                         {tools1?.map((item, index) => (
@@ -38,7 +54,7 @@ const OtherFeatures = () => {
                                     alt="item-icon"
                                     height={230}
                                     width={402}
-                                      className="h-[230px] w-full rounded-t-[16px] object-cover"
+                                    className="h-[230px] w-full rounded-t-[16px] object-cover"
                                 />
                                 <div className="text-center rounded-b-[16px] bg-black p-4 font-semibold text-white text-xl">{item.title}</div>
                             </div>
@@ -55,7 +71,7 @@ const OtherFeatures = () => {
                                     width={402}
                                     className="h-[230px] w-full rounded-t-[16px] object-cover"
                                 />
-                                  <div className=" text-center rounded-b-[16px] bg-black p-4 font-semibold text-white text-xl">{item.title}</div>
+                                <div className=" text-center rounded-b-[16px] bg-black p-4 font-semibold text-white text-xl">{item.title}</div>
                             </div>
                         ))}
                     </Slider>

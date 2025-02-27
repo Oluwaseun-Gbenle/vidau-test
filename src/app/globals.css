@@ -35,6 +35,12 @@ body {
   background-position: left;
 }
 
+@media (max-width: 768px) {
+  .gradient-bg {
+    background-image: none;
+  }
+}
+
 .background-effect {
   position: relative;
 }
@@ -56,8 +62,3 @@ body {
   position: relative;
   z-index: 1;
 }
-/* customise margin on carousel */
-.custom-slider .slick-slide{
-  /* margin-left: 10px;
-  margin-right: 10px; */
-  }

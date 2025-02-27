@@ -1,4 +1,4 @@
- "use client"
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Slider from "react-slick"
@@ -20,10 +20,33 @@ const TrustedBy = () => {
         touchThreshold: 10,
         className: "overflow-hidden",
         containerClassName: "w-full max-w-full overflow-hidden",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 0.3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 0.2,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 0.2,
+                }
+            }
+        ],
     };
     return (
-        <div className='px-5 sm:px-12 xl:px-16'>
-            <div className='bg-[#6437F5] rounded-[32px] py-12'>
+        <div className='sm:px-12 xl:px-16'>
+            <div className='bg-[#6437F5] sm:rounded-[32px] py-10'>
                 <div className='flex flex-wrap gap-6 custom-slider'>
                     <Slider {...settings} >
                         {trusteeList?.map((item, index) => (

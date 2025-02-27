@@ -5,6 +5,7 @@ import { Link, scroller } from "react-scroll";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Button from "./shared/button";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const NavBar: FC = () => {
   const pathname = usePathname();
@@ -49,9 +50,9 @@ const NavBar: FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true); 
+        setScrolled(true);
       } else {
-        setScrolled(false); 
+        setScrolled(false);
       }
     };
 
@@ -61,7 +62,7 @@ const NavBar: FC = () => {
 
   return (
     <div
-      className={` ${scrolled ? "bg-[rgb(95,52,234,0.95)]" : "bg-transparent"} pt-3 pb-3 px-5 sm:px-16 2xl:max-w-[1440px] mx-auto fixed top-0 left-0 right-0 z-50 flex lg:items-center lg:justify-between  flex-row-reverse lg:flex-row  transition-all duration-300`}
+      className={` ${scrolled ? "bg-[rgb(95,52,234,0.95)]" : "bg-transparent"} pt-3 pb-3 px-6 lg:px-12 xl:px-16 2xl:max-w-[1440px] mx-auto fixed top-0 left-0 right-0 z-50 flex md:items-center justify-between   flex-row  transition-all duration-300`}
     >
       <div className="">
         <Image
@@ -72,15 +73,10 @@ const NavBar: FC = () => {
         />
       </div>
 
-      <nav className="flex justify-between px-16">
+      <nav className="md:flex justify-between lg:px-12 order-3 lg:order-2">
         <div className="lg:hidden" onClick={toggleMenu}>
           <button className="text-2xl">
-            <Image
-              src="/svg/hamburger-menu.svg"
-              alt="menu-icon"
-              height={24}
-              width={24}
-            />
+            <RxHamburgerMenu size={24} />
           </button>
         </div>
 
@@ -104,9 +100,9 @@ const NavBar: FC = () => {
             >
               <div className="flex items-center gap-1">
                 {link.label}
-                <IoMdArrowDropdown size={17} 
-                color={activeLink === link.href ? "text-azure50" : "text-white"}
-                className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}  />
+                <IoMdArrowDropdown size={17}
+                  color={activeLink === link.href ? "text-azure50" : "text-white"}
+                  className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
               </div>
             </Link>
           )
@@ -115,7 +111,7 @@ const NavBar: FC = () => {
         </div>
       </nav>
 
-      <div className=" flex items-center gap-5">
+      <div className=" flex items-center gap-5 order-2 lg:order-3">
         <Button
           text="Login"
           className="bg-transparent border border-white text-white"

@@ -25,6 +25,9 @@ export default {
       },
     },
   },
+  screens: {
+    'customLg': { max: '1098px' },
+  },
   plugins: [
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('@tailwindcss/line-clamp'),

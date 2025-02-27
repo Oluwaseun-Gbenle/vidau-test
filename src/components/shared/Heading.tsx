@@ -6,7 +6,7 @@ interface IHeading {
 const Heading = ({className,text}: IHeading) => {
   return (
     <div
-    className={`font-medium text-xl xl:w-[75%] mx-auto sm:text-5xl text-center leading-[80px] ${className}`}
+    className={`font-medium  xl:w-[75%] mx-auto text-4xl md:text-5xl text-center md:leading-[80px] ${className}`}
   >
   {text}
   </div>
