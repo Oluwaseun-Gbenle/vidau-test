@@ -1,5 +1,5 @@
 "use client"
-import { shopingLinkList, tryitList } from '@/data';
+import {  shopingLinkList, tryitList } from '@/data';
 import Image from 'next/image'
 import React from 'react'
 import { FiArrowUpRight } from "react-icons/fi";
@@ -26,7 +26,7 @@ const TryItNow = () => {
                         />
                         <div className=''>
                             <div className='text-grey27 text-wrap line-clamp-2'>{item.details}</div>
-                            <div onClick={() => handleOpenLink(item.link)} className={`max-w-[220px] cursor-pointer text-sm ps-4 pe-[6px] py-2 flex justify-between items-center gap-4 mt-4 rounded-[58px] bg-[${item.linkBgColor}] font-semibold`} >
+                            <div onClick={() => handleOpenLink(item.link)} className={`max-w-[220px] cursor-pointer text-sm ps-4 pe-[6px] py-2 flex justify-between items-center gap-4 mt-4 rounded-[58px] ${index > 1 ? "bg-[#0063D129]" : index > 0 ? "bg-[#FBDED7]" : "bg-[#FBF1DB]" } font-semibold`} >
                                 <Image
                                     src={item.icon}
                                     alt="item-icon"
@@ -35,7 +35,7 @@ const TryItNow = () => {
                                 />
                                 <div className="text-black text-xs truncate block overflow-hidden text-ellipsis"
                                 >{item.link}</div>
-                                <div className={`bg-[${item.buttonBgColor}] rounded-full p-[5px]`}>
+                                <div className={`${index > 1 ? "bg-[#0365D1]" : index > 0 ? "bg-[#E62E04]" : "bg-[#E49B00]" } rounded-full p-[5px]`}>
                                     <FiArrowUpRight color={"white"} size={18} />
                                 </div>
                             </div>

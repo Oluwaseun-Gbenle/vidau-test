@@ -6,7 +6,6 @@ import NeedsMet from "@/components/needs-met";
 import TransformProduct from "@/components/transform-product";
 import TryItNow from "@/components/try-it-now";
 import WhyChooseUs from "@/components/why-choose-us";
-import { Fragment } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AuthenticReviews from "@/components/authentic-reviews";
@@ -18,8 +17,8 @@ import Footer from "@/components/footer";
 
 export default function Page() {
   return (
-    <Fragment>
-      <NavBar />
+    <div className="2xl:max-w-[1440px] mx-auto">
+      <NavBar /> 
       <Hero />
       <TryItNow />
       <WhyChooseUs />
@@ -33,6 +32,6 @@ export default function Page() {
       <OtherFeatures/>
       <LearnMore/>
       <Footer/>
-    </Fragment>
+    </div>
   );
 }

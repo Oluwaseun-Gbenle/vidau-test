@@ -285,3 +285,16 @@ export const supportList = ["/images/amazon.png", "/images/shopify.png", "/image
                 date: "2024-12-29",
             }
         ]
+
+        export const tools1 = [
+            { title: "Video Downloader", image: "/images/Intuitive YouTube Video Download Interface (1).png" },
+            { title: "YouTube to MP3", image: "/images/Intuitive YouTube Video Download Interface.png" },
+            { title: "Facebook Video Downloader", image: "/images/Health-Fitness1x.webp.png" },
+            { title: "AI Video Generator", image: "/images/ai-video.png" },
+        ]
+       export const tools2 = [
+            { title: "Watermark Remover", image: "/images/unsplash_6n2_zdmsFFM.png" },
+            { title: "Subtitles Remover", image: "/images/delivery-man.png" },
+            { title: "Subtitles Translator", image: "/images/welcome-vidau.png" },
+            { title: "Instagram Video Downloader", image: "/images/fun-image.jpeg" },
+          ];
