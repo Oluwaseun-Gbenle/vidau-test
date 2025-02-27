@@ -58,7 +58,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 xl:gap-6 w-[90%] md:w-[80%] xl:w-[90%] mx-auto absolute -bottom-52 lg:-bottom-48 xl:-bottom-20 z-10 left-0 right-0">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 xl:gap-6 w-[90%] md:w-[80%] xl:w-[90%] mx-auto absolute -bottom-60 lg:-bottom-48 xl:-bottom-20 z-10 left-0 right-0">
                 {shoppingLinkList?.map((item, index) =>
                     <div key={index}
                         className="rounded-[24px] bg-white justify-between flex items-center py-3 px-6  gap-3 w-full xl:max-w-[400px]"

@@ -62,7 +62,7 @@ const NavBar: FC = () => {
 
   return (
     <div
-      className={` ${scrolled ? "bg-[rgb(95,52,234,0.95)]" : "bg-transparent"} pt-3 pb-3 px-6 lg:px-12 xl:px-16 2xl:max-w-[1440px] mx-auto fixed top-0 left-0 right-0 z-50 flex justify-between lg:grid  lg:grid-cols-[10%_65%_46%] xl:grid-cols-[15%_65%_30%] lg:items-center  transition-all duration-300`}
+      className={` ${scrolled ? "bg-[rgb(95,52,234,0.95)]" : "bg-transparent"} pt-3 pb-3 px-6 lg:px-12 xl:px-16 2xl:max-w-[1440px] mx-auto fixed top-0 left-0 right-0 z-50 flex justify-between lg:grid  lg:grid-cols-[10%_65%_46%] xl:grid-cols-[15%_65%_30%] items-center  transition-all duration-300`}
     >
       <div className="">
         <Image
