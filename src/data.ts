@@ -1,6 +1,6 @@
 import { TbGridDots, TbMovie, TbNotification, TbPalette, TbPointerStar } from "react-icons/tb";
 
-export const supportList = ["/images/amazon.png", "/images/shopify.png", "/images/icon_etsy2x-1.png",
+export const supportList = ["/images/amazon.png", "/images/shopify.png", "/images/icon_etsy.png",
     "/images/icon_aliexpress.png", "/images/icon_tiktok_shop2x-1.png", "/images/icon_ebay.png",
     "/images/icon_google_play.png", "/images/icon_apple_store.png", "/images/icon_more2x-1.png"];
 
