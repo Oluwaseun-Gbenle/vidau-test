@@ -7,7 +7,7 @@ import Button from './shared/button';
 const TryItNow = () => {
 
     return (
-        <div className=' px-6 sm:px-12 pt-20 relative'>
+        <div className=' px-6 sm:px-12 pt-36 relative'>
             <div className="py-16">
                 {tryitList?.map((item, index) =>
                     <div key={index} className={`rounded-[40px] py-10 gap-5 md:flex ${index === 1 ? "md:flex-row-reverse" : "md:flex-row"} items-center justify-center mt-8 px-6 lg:px-10`}

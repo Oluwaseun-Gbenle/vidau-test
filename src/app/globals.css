@@ -41,6 +41,26 @@ body {
   }
 }
 
+@media (max-width: 1536px) {
+.hero-responsiveness{
+max-width: 230px;
+}
+}
+@media (max-width: 1352px) {
+  .hero-responsiveness{
+  max-width: 220px;
+  }
+}
+  @media (max-width: 1026px) {
+    .hero-responsiveness{
+    width: 180px;
+    }
+  }
+  /* @media (max-width: 1130px) {
+    .hero-responsiveness{
+    max-width: 100px;
+    }
+  } */
 .background-effect {
   position: relative;
 }

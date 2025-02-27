@@ -18,8 +18,8 @@ import Footer from "@/components/footer";
 export default function Page() {
   return (
     <div className="2xl:max-w-[1440px] mx-auto">
-       <NavBar /> 
-      {/*<Hero />*/}
+      <NavBar />
+      <Hero />
       <TryItNow />
       <WhyChooseUs />
       <HowToCreateURL />
