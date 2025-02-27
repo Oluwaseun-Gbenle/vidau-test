@@ -1,12 +1,12 @@
 import { TbGridDots, TbMovie, TbNotification, TbPalette, TbPointerStar } from "react-icons/tb";
 
 export const supportList = ["/images/amazon.png", "/images/shopify.png", "/images/icon_etsy2x-1.png",
-    "/images/icon_aliexpress2x-2.png", "/images/icon_tiktok_shop2x-1.png", "/images/icon_ebay2x-1.png",
-    "/images/icon_google_play2x-1.png", "/images/icon_apple_store2x-1.png", "/images/icon_more2x-1.png"];
+    "/images/icon_aliexpress.png", "/images/icon_tiktok_shop2x-1.png", "/images/icon_ebay.png",
+    "/images/icon_google_play.png", "/images/icon_apple_store.png", "/images/icon_more2x-1.png"];
 
     export const shoppingLinkList = [{ image: "/images/coat.png", details: "Black Women's Striped Puffed Long Sleeve Tops Fall…", link: "https://www.amazon.com/jgtk6897jtj", icon: "/images/amazon.png", linkText: "https://www.ama...",  },
-        { image: "/images/nitendo.png", details: "New Nintendo Switch 2 Console - Black, Oled Screen", link: "https://www.aliexpress.com", icon: "/images/icon_aliexpress2x-2.png", linkText: "https://www.alie...", },
-        { image: "/images/bike.png", details: "Original 1998 Diesel Honda Motorcompo in Red", link: "https://ebay.com/eiudjd", icon: "/images/icon_ebay2x-1.png", linkText: "https://ebay.co...",}
+        { image: "/images/nitendo.png", details: "New Nintendo Switch 2 Console - Black, Oled Screen", link: "https://www.aliexpress.com", icon: "/images/icon_aliexpress.png", linkText: "https://www.alie...", },
+        { image: "/images/bike.png", details: "Original 1998 Diesel Honda Motorcompo in Red", link: "https://ebay.com/eiudjd", icon: "/images/icon_ebay.png", linkText: "https://ebay.co...",}
         ];
 
       export const tryitList = [
